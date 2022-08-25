@@ -5,7 +5,7 @@
 #         self.left = left
 #         self.right = right
 class Solution: 
-    def DFS(self, node):
+    def DFS(self, node) :
         if not node :
             return
         self.Stack.append(str(node.val))
