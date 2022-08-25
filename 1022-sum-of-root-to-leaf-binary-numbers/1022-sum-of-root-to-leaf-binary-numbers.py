@@ -6,11 +6,11 @@
 #         self.right = right
 class Solution: 
     def DFS(self, node):
-        if not node:
+        if not node :
             return
         self.Stack.append(str(node.val))
         # check leaf:
-        if not node.left and not node.right:
+        if not node.left and not node.right :
             self.FinalAnswer += int(''.join(self.Stack), 2)
         self.DFS(node.left)
         self.DFS(node.right)
