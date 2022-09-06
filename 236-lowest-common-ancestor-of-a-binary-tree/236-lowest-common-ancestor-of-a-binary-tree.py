@@ -24,5 +24,5 @@ class Solution(object):
         
         if left and right :
             return root
-        
-        return left if left else right
+        else :
+            return left or right
